@@ -1,0 +1,12 @@
+<button id="{{inputBtnId}}" class="colorpickpc-input-btn" onTap="on{{edit.open}}">
+  <view class="colorpickpc-input-color" style="background-color: {{valueText}}; "></view>
+  <text class="colorpickpc-input-text">{{valueText}}</text>
+</button>
+<overlay target="{{inputBtnId}}" safeNode="{{inputBtnId}}" visible="{{edit.opened}}" onRequestClose="on{{edit.close}}" canCloseByMask="{{true}}" canCloseByOutSideClick="{{true}}" disableScroll="{{true}}">
+  <view class="colorpickpc-modal-box" style="top:{{top}};">
+    <view class="colorpickpc-modal-close" onTap="on{{edit.close}}">
+      <icon type="close" size="xs"></icon>
+    </view>
+    <color-picker color="{{valueHex}}" disableAlpha="{{!alphaEnable}}" presetColors="{{presetColors}}" width="{{pickerWidth}}" dataset="{{dataset}}" onChange="on{{change}}" />
+  </view>
+</overlay>

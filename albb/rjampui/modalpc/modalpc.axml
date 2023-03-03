@@ -1,0 +1,33 @@
+<view a:if="{{!overlayEnable}}" class="rjampuimodalpc-root {{!!fill ? 'rjampuimodalpc-fill' : ''}} {{visible ? 'rjampuimodalpc-visible-true' : 'rjampuimodalpc-visible-false'}} {{!animation ? 'rjampuimodalpc-animation-false' : ''}}">
+  <view class="rjampuimodalpc-screen">
+    <view class="rjampuimodalpc-mask" a:if="{{!maskHide && !fill}}" onTap="on{{maskClick}}"></view>
+    <view class="rjampuimodalpc-box" style="top:{{top}};">
+      <view a:if="{{!closeHide}}" class="rjampuimodalpc-close" onTap="on{{close}}">
+        <icon type="close" size="xs"></icon>
+      </view>
+      <view class="rjampuimodalpc-body">
+        <sploading loading="{{loading}}">
+          <slot></slot>
+        </sploading>
+      </view>
+    </view>
+  </view>
+</view>
+
+<overlay a:if="{{overlayEnable}}" wrapperClassName="rjampuimodalpc-overlay" class="" visible="{{visible}}" hasMask="{{false}}" onRequestClose="on{{close}}" disableScroll="{{!scrollCross}}" canCloseByOutSideClick="{{canCloseByOutSideClick}}" canCloseByMask="{{canCloseByMask}}" animation="{{animation}}">
+<view class="rjampuimodalpc-root {{!!fill ? 'rjampuimodalpc-fill' : ''}} {{visible ? 'rjampuimodalpc-visible-true' : 'rjampuimodalpc-visible-false'}} {{!animation ? 'rjampuimodalpc-animation-false' : ''}}">
+  <view class="rjampuimodalpc-screen">
+    <view class="rjampuimodalpc-mask" a:if="{{!maskHide && !fill}}" onTap="on{{maskClick}}"></view>
+    <view class="rjampuimodalpc-box" style="top:{{top}};">
+      <view a:if="{{!closeHide}}" class="rjampuimodalpc-close" onTap="on{{close}}">
+        <icon type="close" size="xs"></icon>
+      </view>
+      <view class="rjampuimodalpc-body">
+        <sploading loading="{{loading}}">
+          <slot></slot>
+        </sploading>
+      </view>
+    </view>
+  </view>
+</view>
+</overlay>

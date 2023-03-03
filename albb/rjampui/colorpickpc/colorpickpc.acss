@@ -1,0 +1,39 @@
+.colorpickpc-input-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.colorpickpc-input-color {
+  height: 20px;
+  width: 20px;
+  display: block;
+  border: 1px solid #aaaaaa;
+}
+
+.colorpickpc-input-text {
+  display: block;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.colorpickpc-modal-box {
+  position: relative;
+}
+
+.colorpickpc-modal-close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #ff9999;
+}

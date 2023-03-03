@@ -1,0 +1,17 @@
+<view class="sploading-container {{loading ? 'sploading-loading' : ''}} {{className}}" style="{{style}}">
+  <slot></slot>
+  <view class="sploading-mask">
+    <view class="sploading-icon">
+      <view class="sploading-icon-out">
+        <view class="sploading-icon-in">
+        </view>
+        <view class="sploading-icon-in">
+        </view>
+        <view class="sploading-icon-in">
+        </view>
+        <view class="sploading-icon-in">
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

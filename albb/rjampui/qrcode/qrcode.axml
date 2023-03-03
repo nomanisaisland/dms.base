@@ -1,0 +1,5 @@
+<view class="rjmpuiqrcode-container {{className}}" style=" width: {{width}}px; {{style}}">
+  <canvas id="{{canvasId}}" onTap="on{{copy}}" class="rjmpuiqrcode-canvas" style="width: {{width}}px; height: {{height}}px;  " />
+  <input a:if="{{!inputHide}}" value="{{text}}" class="rjmpuiqrcode-input" style="width: {{width}}px; " />
+  <button a:if="{{!buttonHide}}" type="primary" class="rjmpuiqrcode-button" onTap="on{{copy}}" style="width: {{width}}px; ">复制</button>
+</view>

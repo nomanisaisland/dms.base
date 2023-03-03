@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "composite": false,
+    "useDefineForClassFields": false,
+    "target": "ES2019",
+    "downlevelIteration": true,
+    "importHelpers": false,
+    "jsx": "react",
+    "lib": [
+      "esnext",
+      "DOM"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "incremental": false,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "noEmitOnError": false,
+    "forceConsistentCasingInFileNames": true,
+    "preserveSymlinks": false,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "declaration": false,
+    "strict": false
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "./node_modules/**/*",
+    "./build/**/*"
+  ],
+  "compileOnSave": true
+}

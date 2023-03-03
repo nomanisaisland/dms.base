@@ -1,0 +1,18 @@
+.rjmpuiqrcode-container {
+  margin: auto;
+}
+
+.rjmpuiqrcode-canvas {
+  display: block;
+  margin: 8px 0;
+}
+
+.rjmpuiqrcode-input {
+  display: block;
+  margin: 8px 0;
+}
+
+.rjmpuiqrcode-button {
+  display: block;
+  margin: 8px 0;
+}

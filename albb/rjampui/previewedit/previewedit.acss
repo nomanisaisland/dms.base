@@ -1,0 +1,67 @@
+.previewedit {
+  display: flex;
+  margin: 10px 0;
+}
+
+.previewedit-show {
+  width: calc(375px * 0.7);
+  height: calc(667px * 0.7);
+  box-sizing: content-box;
+  border: 6px solid #aaaaaa;
+  box-shadow: rgba(170, 170, 170, 0.5) 4px 4px;
+  border-radius: 6px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.previewedit-window {
+  font-size: 32px;
+  width: 750px;
+  height: 1334px;
+  overflow: auto;
+  transform: scale(0.35);
+  transform-origin: left top;
+  position: relative;
+}
+
+.previewedit-form {
+  width: calc(375px * 0.7);
+  height: calc(667px * 0.7);
+  margin: 10px auto;
+  overflow: auto;
+}
+
+.previewedit-form .previewedit-formitem-half {
+  max-width: 46%;
+}
+
+@media screen and (min-width: 1228px) {
+  .previewedit-show {
+    width: calc(375px * 2 * 0.35);
+    height: calc(667px * 2 * 0.35);
+  }
+  .previewedit-window {
+    transform: scale(0.35);
+  }
+  .previewedit-form {
+    width: calc(375px * 2 * 0.35);
+    height: calc(667px * 2 * 0.35);
+  }
+}
+
+.previewedit-off {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+  color: #ffffff;
+  z-index: 100;
+}
