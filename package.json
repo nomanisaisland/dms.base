@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cac": "^6.7.14",
     "content-type": "^1.0.5",
     "cookies": "^0.8.0",
     "fresh": "^0.5.2",

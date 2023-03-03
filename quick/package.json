@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "quick": "bin/quick.ts"
+    "quick": "bin/quick.js"
   },
   "directories": {
     "lib": "lib"
@@ -14,5 +14,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cac": "^6.7.14"
+  }
 }
